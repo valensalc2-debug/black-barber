@@ -1,0 +1,264 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="BLACK BARBER en Paraná, Entre Ríos. Cortes modernos, barba y estilo premium.">
+  <title>BLACK BARBER | Barbería</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111111;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .contenedor {
+      width: 90%;
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 35px 15px 20px;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      letter-spacing: 5px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #c5c5c5;
+      font-size: 1.1rem;
+    }
+
+    .portada {
+      width: 100%;
+      max-height: 560px;
+      object-fit: cover;
+      display: block;
+      border-radius: 14px;
+      margin: 15px auto 25px;
+    }
+
+    .presentacion {
+      text-align: center;
+      color: #cccccc;
+      font-size: 1.2rem;
+      margin-bottom: 45px;
+    }
+
+    section {
+      margin-bottom: 45px;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+    }
+
+    .servicios {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .servicio {
+      background: #222222;
+      padding: 25px 15px;
+      text-align: center;
+      border-radius: 12px;
+      border: 1px solid #303030;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .servicio:hover {
+      transform: translateY(-4px);
+      background: #292929;
+    }
+
+    .servicio h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .precio {
+      color: #d6b47a;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .informacion {
+      background: #1d1d1d;
+      padding: 35px 20px;
+      border-radius: 14px;
+      text-align: center;
+    }
+
+    .informacion h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .informacion p {
+      color: #cccccc;
+      margin-bottom: 25px;
+    }
+
+    .informacion p:last-child {
+      margin-bottom: 0;
+    }
+
+    .reserva {
+      text-align: center;
+      margin: 35px 0 50px;
+    }
+
+    .boton-whatsapp {
+      display: inline-block;
+      background: #25d366;
+      color: #111111;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 15px 28px;
+      border-radius: 8px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .boton-whatsapp:hover {
+      background: #20b958;
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      color: #888888;
+      border-top: 1px solid #292929;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 650px) {
+      header h1 {
+        letter-spacing: 3px;
+      }
+
+      .servicios {
+        grid-template-columns: 1fr;
+      }
+
+      .servicio {
+        padding: 20px;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+
+      .presentacion {
+        font-size: 1.05rem;
+      }
+
+      .boton-whatsapp {
+        width: 100%;
+        padding: 15px 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="contenedor">
+      <h1>BLACK BARBER</h1>
+      <p>Tu estilo, nuestra pasión.</p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <img
+      class="portada"
+      src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1400&q=85"
+      alt="Interior de una barbería profesional"
+    >
+
+    <p class="presentacion">
+      Cortes modernos. Estilo clásico.
+    </p>
+
+    <section id="servicios">
+      <h2>NUESTROS SERVICIOS</h2>
+
+      <div class="servicios">
+
+        <article class="servicio">
+          <h3>✂️ Corte de pelo</h3>
+          <p class="precio">$8.000</p>
+        </article>
+
+        <article class="servicio">
+          <h3>🧔 Corte + barba</h3>
+          <p class="precio">$11.000</p>
+        </article>
+
+        <article class="servicio">
+          <h3>💈 Corte premium</h3>
+          <p class="precio">$15.000</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="informacion" id="informacion">
+
+      <h2>HORARIOS</h2>
+      <p>
+        Lunes a viernes: 9:00 - 19:00<br>
+        Sábados: 9:00 - 14:00
+      </p>
+
+      <h2>UBICACIÓN</h2>
+      <p>Paraná, Entre Ríos</p>
+
+    </section>
+
+    <section class="reserva" id="reservar">
+      <a
+        class="boton-whatsapp"
+        href="https://wa.me/54934353055313?text=Hola%2C%20quiero%20reservar%20un%20turno%20en%20BLACK%20BARBER."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        RESERVAR TURNO POR WHATSAPP
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 BLACK BARBER. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
+```
